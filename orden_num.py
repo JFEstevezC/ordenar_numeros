@@ -1,5 +1,3 @@
-
-
 print("------------------------------------------")
 print("---ORDERNAR NÚMEROS EN ORDEN ASCENDENTE---") 
 print("------------------------------------------")
@@ -11,33 +9,17 @@ c=int(input("Escriba el tercer número: "))
 if a > b:
     if a > c:
         if b > c:
-            print("Los números en orden ascendente es")
-            print(c)
-            print(b)
-            print(a)
+            r = c, b, a
         else:
-            print("Los números en orden ascendente es")
-            print(b)
-            print(c)
-            print(a)
+            r = b, c, a
     else:
-        print("Los números en orden ascendente es")
-        print(b)
-        print(a)
-        print(c)
+        r = b, a, c
 elif b > c:
     if c > a:
-        print("Los números en orden ascendente es")
-        print(a)
-        print(c)
-        print(b)
+        r = a, c, b
     else:
-        print("Los números en orden ascendente es")
-        print(c)
-        print(a)
-        print(b)
+        r = c, a, b
 else:
-    print("Los números en orden ascendente es")
-    print(a)
-    print(b)
-    print(c)
+    r = a, b, c
+print("Los números en orden ascendente es")
+print(r)
